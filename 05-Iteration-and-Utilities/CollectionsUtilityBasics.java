@@ -16,12 +16,12 @@ public class CollectionsUtilityBasics {
         System.out.println(Collections.max(nums));
         System.out.println(Collections.min(nums));
         System.out.println(Collections.frequency(nums, 10));
-        System.out.println(Collections.binarySearch(nums, 30));
-        // binarySearch se pehle list sorted honi chahiye
+
+        // Binary search se pehle list ko sort karna zaroori hai
         Collections.sort(nums);
         System.out.println(Collections.binarySearch(nums, 30));
 
         List<Integer> fixed = Collections.nCopies(3, 7);
-        System.out.println(fixed); // [7, 7, 7], fixed-size/unmodifiable result
+        System.out.println(fixed); // [7, 7, 7], unmodifiable list
     }
 }
